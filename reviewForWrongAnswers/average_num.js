@@ -14,6 +14,6 @@ let max = Math.max(...scores);
 let totalScore = 0;
 for(let i=0; i<n; i++) {
   totalScore += (scores[i]/max)*100;
-}
+}  
 
 console.log((totalScore/n));
