@@ -1,4 +1,5 @@
 // https://www.acmicpc.net/problem/10814
+
 let fs = require('fs');
 let input = fs.readFileSync('/dev/stdin').toString().split('\n');
 
@@ -11,6 +12,8 @@ for(let i=1; i<=n; i++){
   arr.push([age, name]);
 }
 
+// stable sort가 기본
+// 키가 동일한 원소가 여러개면, 원래 앞에 있는 원소는 계속 앞에 있음
 arr.sort((a,b)=>a[0]-b[0]);
 
 let answer = '';
